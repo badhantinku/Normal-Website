@@ -28,9 +28,9 @@
     </div>
   </section>
   <!-- main Part -->
-  <section class="grid grid-cols-12">
+  <section class="grid grid-cols-12 gap-5">
     <!-- middle part -->
-    <section class="col-span-8 bg-gray-200">
+    <section class="col-span-8 bg-gray-200 rounded-xl">
       <div class="grid grid-cols-3 gap-5 p-5">
         <!-- task -->
         <div class="flex w-[263px] h-[128px] p-9 gap-2 bg-[#F4F7FF] rounded-xl">
@@ -48,9 +48,9 @@
         <!-- wed -->
         <div class="flex gap-2 p-7 bg-[#F4F7FF] rounded-xl w-[200px] h-[128px]">
           <img class="w-[28px] h-[28px] mt-3" src="./assets/calender.png" alt="">
-          <div>
-            <h3>Wed,</h3>
-            <h2 class=" font-bold">Jul 28 2025</h2>
+          <div id="real-time">
+            <!-- <h3>Wed,</h3>
+            <h2  id="" class=" font-bold">Jul 28 2025</h2> -->
           </div>
         </div>
       </div>
@@ -162,10 +162,19 @@
       </section>
     </section>
     <!-- left part -->
-    <section class="col-span-4">
-
+    <section class="col-span-4 bg-gray-200 rounded-xl">
+      <div class="flex gap-2 justify-center items-center mt-5">
+        <img class="w-[24px] h-[24px]" src="./assets/activity.png" alt="">
+        <h1 class="text-2xl font-semibold text-center">Acitivity Log</h1>
+      </div>
+       <div class="flex justify-center mt-5">
+        <button class="btn btn-primary p-5 text-white">Clear History</button>
+       </div>
     </section>
   </section>
+  <script src="script/realTime.js">
+
+  </script>
 </body>
 
 </html>
