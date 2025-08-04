@@ -1,5 +1,6 @@
 document.getElementById('card-three').addEventListener('click', function (event) {
     event.preventDefault();
+     alert("Board Updated Successfully")
     const plusPoint = document.getElementById('plusPoint').innerText;
     const convertedPlusPoit = parseFloat(plusPoint)
     const sum = convertedPlusPoit + 1;
