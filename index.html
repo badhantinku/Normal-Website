@@ -2,32 +2,170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="max-w-7xl mx-auto">
-    <!-- Navbar -->
-    <section class="bg-gray-200 my-5 rounded-sm flex justify-between">
-        <!-- right side -->
-      <div class="flex p-3">
-        <img src="./assets/logo.png" alt="">
-        <h1 class="text-3xl mt-1">Dev<span class="font-bold">Board</span> </h1>
+<body class="max-w-7xl mx-auto ">
+  <!-- Navbar -->
+  <section class="bg-gray-200 my-5 rounded-sm flex justify-between">
+    <!-- right side -->
+    <div class="flex p-3">
+      <img src="./assets/logo.png" alt="">
+      <h1 class="text-3xl mt-1">Dev<span class="font-bold">Board</span> </h1>
+    </div>
+    <!-- left site -->
+    <div class="flex gap-5">
+      <div class="rounded-xl flex p-4 bg-blue-200 w-[123px] h-[64px] gap-3 mt-1">
+        <img class="w-[32px] h-[32px]" src="./assets/checkbox.png" alt="">
+        <h3 class="font-bold text-2xl ">23</h3>
       </div>
-      <!-- left site -->
-      <div class="flex gap-5">
-        <div class="rounded-xl flex p-4 bg-blue-200 w-[123px] h-[64px] gap-3 mt-1">
-          <img class="w-[32px] h-[32px]" src="./assets/checkbox.png" alt="">
-          <h3 class="font-bold text-2xl ">23</h3>
+      <!-- button -->
+      <img class="w-[40px] h-[40px] mt-4 mr-3" src="./assets/theme-btn.png" alt="">
+    </div>
+  </section>
+  <!-- main Part -->
+  <section class="grid grid-cols-12">
+    <!-- middle part -->
+    <section class="col-span-8 bg-gray-200">
+      <div class="grid grid-cols-3 gap-5 p-5">
+        <!-- task -->
+        <div class="flex w-[263px] h-[128px] p-9 gap-2 bg-[#F4F7FF] rounded-xl">
+          <img class="w-[28px] h-[28px] mt-3 rounded-full" src="./assets/checkbox.png" alt="">
+          <div>
+            <h3>Task Assigned</h3>
+            <h1 class="text-2xl font-bold">05</h1>
+          </div>
         </div>
-        <!-- button -->
-         <img class="w-[40px] h-[40px] mt-4 mr-3" src="./assets/theme-btn.png" alt="">
+        <!-- Discover Something New Today! -->
+        <div class="flex   gap-5 p-5 bg-linear-to-r from-blue-700 to-indigo-400 rounded-xl ">
+          <img class="w-[56px] h-[64px]" src="./assets/board.png" alt="">
+          <h2 class="text-white font-semibold">Discover Something New Today!</h2>
+        </div>
+        <!-- wed -->
+        <div class="flex gap-2 p-7 bg-[#F4F7FF] rounded-xl w-[200px] h-[128px]">
+          <img class="w-[28px] h-[28px] mt-3" src="./assets/calender.png" alt="">
+          <div>
+            <h3>Wed,</h3>
+            <h2 class=" font-bold">Jul 28 2025</h2>
+          </div>
+        </div>
       </div>
+      <!-- card section -->
+      <section class="grid grid-cols-3 gap-2 p-4">
+        <!-- 1st card -->
+        <section>
+          <div class="card  bg-[#F4F7FF] card-md shadow-sm">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-xl  mt-2 w-[80px]">ShopEase </p>
+              <h2 class="card-title ">Fix Mobile Button Issue </h2>
+              <p class="bg-white p-2 rounded-xl text-gray-400 mt-2">Debug using Chrome DevTools, check for overlapping
+              </p>
+              <div class="flex justify-between mt-5 ">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1>
+                  <p class="font-bold ">21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+        </section>
+        <!-- 2nd card -->
+        <section>
+          <div class="card  bg-[#F4F7FF] card-md shadow-sm">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-xl  mt-2 w-[80px]">CloudSync </p>
+              <h2 class="card-title ">Add Dark Mode </h2>
+              <p class="bg-white p-2 rounded-xl text-gray-400 mt-2">Store the user's preference in localStorage, update CSS
+              </p>
+              <div class="flex justify-between mt-5 ">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1> 
+                  <p class="font-bold ">21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+        </section>
+        <!-- 3rd card -->
+        <section>
+          <div class="card  bg-[#F4F7FF] card-md shadow-sm">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-xl  mt-2 w-[80px]">SwiftPay </p>
+              <h2 class="card-title ">Optimize  Home page  </h2>
+              <p class="bg-white p-2 rounded-xl text-gray-400 mt-2">Debug using Chrome DevTools, check for overlappin 
+              </p>
+              <div class="flex justify-between mt-5 ">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1>
+                  <p class="font-bold ">21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+        </section>
+
+        <!-- 4th card -->
+        <section>
+          <div class="card  bg-[#F4F7FF] card-md shadow-sm">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-xl  mt-2 w-[80px]">Meta </p>
+              <h2 class="card-title ">Add new emoji 🤲     </h2>
+              <p class="bg-white p-2 rounded-xl text-gray-400 mt-2">Debug using Chrome DevTools, check for overlapping
+              </p>
+              <div class="flex justify-between mt-5 ">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1>
+                  <p class="font-bold ">21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+        </section>
+        <!-- 5th card -->
+        <section>
+          <div class="card  bg-[#F4F7FF] card-md shadow-sm">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-xl  mt-2 w-[80px]">Google  </p>
+              <h2 class="card-title ">Integrate OpenAI API   </h2>
+              <p class="bg-white p-2 rounded-xl text-gray-400 mt-2">Debug using Chrome DevTools, check for overlapping
+              </p>
+              <div class="flex justify-between mt-5 ">
+                <div>
+                  <h1 class="text-gray-400">Deadline</h1>
+                  <p class="font-bold ">21 March 2025</p>
+                </div>
+                <button class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+        </section>
+        <!-- 6th card  -->
+        <div class="card  bg-[#F4F7FF] card-md shadow-sm">
+          <div class="card-body">
+            <p class="bg-white p-2 rounded-xl  mt-2 w-[80px]">Glassdoar </p>
+            <h2 class="card-title ">Improve Job searching  </h2>
+            <p class="bg-white p-2 rounded-xl text-gray-400 mt-2">Debug using Chrome DevTools, check for overlapping
+            </p>
+            <div class="flex justify-between mt-5 ">
+              <div>
+                <h1 class="text-gray-400">Deadline</h1>
+                <p class="font-bold ">21 March 2025</p>
+              </div>
+              <button class="btn btn-primary">Completed</button>
+            </div>
+          </div>
+
+
+      </section>
     </section>
-    <!-- main Part -->
+    <!-- left part -->
+    <section class="col-span-4">
+
+    </section>
+  </section>
 </body>
 
 </html>
