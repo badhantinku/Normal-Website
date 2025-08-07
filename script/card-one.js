@@ -41,6 +41,7 @@ document.getElementById('card-one').addEventListener('click', function (event) {
     const activityContainer = document.getElementById('activity-container');
     const newActivity = document.createElement('div');
     newActivity.className = "bg-white rounded-xl p-5 w-[400px] mx-auto my-5";
-    newActivity.innerHTML = `<h3>✅ Task Completed: ${cardTitle}</h3>`;
+    newActivity.innerHTML = `<h3>✅ Task Completed: ${cardTitle}</h3>
+    <p>${formattedDate}</p>`;
     activityContainer.appendChild(newActivity);
 });
